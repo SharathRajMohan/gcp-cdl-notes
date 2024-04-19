@@ -88,8 +88,8 @@ Because public cloud has on-demand availability of computing and infrastructure 
 
 * Google Cloud Regions & Zones:
     * Google Cloud’s infrastructure is based Google Cloud’s infrastructure is based in five major geographic locations: North America, South America, Europe, Asia, and Australia.
-    * Regions: represent independent geographic areas and are composed of zones.
-    * Zones: is an area where Google Cloud resources are deployed.
+    * Regions: represent independent geographic areas and are composed of zones. Each Region has three or more zones
+    * Zones: is an area where Google Cloud resources are deployed. Each Zone has one or more discrete clusters
 
     * You can run resources in different regions. This is useful for bringing applications closer to users around the world, and also for protection in case there are issues with an entire region, such as a natural disaster.
     * Some of Google Cloud’s services support placing resources in what we call a multi-region.
@@ -110,9 +110,22 @@ Because public cloud has on-demand availability of computing and infrastructure 
     * Cloud Run and BigQuery are examples of Google Cloud PaaS products.
         * Cloud Run: is a fully managed, serverless platform for developing and hosting applications at scale, which takes care of provisioning servers and scaling app instances based on demand.
         * Big Query: is a fully managed enterprise data warehouse that manages and analyzes data, and can be queried to answer big data questions with zero infrastructure management.
-        * PaaS is suitable for organizations that: Want to create unique and custom applications without investing a lot in owning and managing infrastructure.
+    * PaaS is suitable for organizations that: Want to create unique and custom applications without investing a lot in owning and managing infrastructure.
+    * Container as a Service (CaaS) - Containers instead of apps
+    * Function as a Service (FaaS) - Functions instead of apps
+    * Databases
 
 * SaaS: is a computing model that offers an entire application, managed by a cloud provider, through a web browser.
     * Google Workspace, which includes tools such as Gmail, Google Drive, Google Docs, and Google Meet, is a Google Cloud SaaS product.
 
 * Simply put, the cloud provider is responsible for the security of the cloud, while the customer is responsible for security in the cloud.
+
+* What is a MicroService?
+* Services that have a specific goal of doing something. And multiple microservices make up an entire application. For example, An E-Commerce web application may consist of following microservices:
+
+    * A backend MS
+    * A frontend MS
+    * A webserver MS to handle HTTP reqs
+    * A database MS and so on...
+
+    
