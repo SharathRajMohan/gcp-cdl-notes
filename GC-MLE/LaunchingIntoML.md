@@ -31,12 +31,25 @@
 ### What is EDA?
 * In statistics, exploratory data analysis or EDA is an approach to analyzing data sets to summarize their main characteristics, often with visual methods.
 * Exploratory data analysis is an approach for data analysis that employs a variety of techniques, mostly graphical, to maximize insight into a data set, uncover underlying structure, extract important variables, detect outliers and anomalies, test underlying assumptions, develop parsimonious models and determine optimal factor settings.
+* The purpose of an EDA is to find insights which will serve for data cleaning, preparation, or transformation, which will ultimately be used in a machine learning algorithm.
 * The three popular data analysis approaches are:
     * Classical
     * Exploratory data analysis 
-    * Bayesian
+    * Bayesian: to determine posterior probabilities based on prior probabilities and new information.
         * Posterior probabilities is a the probability an event will happen after all evidence or background information has been taken into account.
         * Prior probability is the probability an event will happen before you've taken adding new evidence into account.
 
-    
+* For exploratory data analysis, the focus is on the data, its structure, outliers and models suggested by the data.
+* Main methods of EDA
+    * Univariate Analysis:  analysis of a single variable. It doesn't deal with causes or relationships. Two types of variables are:
+        * Categorical : can be classified into groups.
+        * Continuous:  can be measured on a continuous scale.
 
+    * Bivariate Analysis:  analysis of two variables. It deals with the relationship between two variables.
+        * Factor Plot (Seaborn): draw a categorical plot up to a facet grid.
+        * Seaborn's jointplot function draws a plot of two variables with bivariate and univariate graphs.
+        * Seaborn's factorplot map method can map a factorplot onto a KDE, distribution or boxplot chart.
+
+* A histogram is a graphical display of data using bars of different heights. In a histogram, each bar groups numbers into ranges. Taller bars show that more data falls in that range. A histogram displays the shape and spread of continuous sampled data.
+* A scatter plot is a graph in which the values of two variables are plotted against two axes. The pattern of the resulting points revealing any correlation that may be present.
+* A heatmap is a graphical representation of data that uses a system of color coding to represent different values.
